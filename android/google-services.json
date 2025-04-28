@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "520112168330",
+    "project_id": "rtca-prototype",
+    "storage_bucket": "rtca-prototype.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520112168330:android:632188427db438267abc73",
+        "android_client_info": {
+          "package_name": "com.whatsappclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "520112168330-2mn99ca0vek3v8kubo2noimrrg78fnpk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwdHMG3j_WLLRAGjHfB7PhqQ1JDW-MWsI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "520112168330-2mn99ca0vek3v8kubo2noimrrg78fnpk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
