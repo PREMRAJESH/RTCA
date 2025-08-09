@@ -1,10 +1,118 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 📱 College Chat App
+
+<div align="center">
+
+[![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactnative.dev/)
+[![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)](https://firebase.google.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://choosealicense.com/licenses/mit/)
+
+<img src="assets/logo.png" alt="College Chat App Logo" width="200"/>
+
+A modern, feature-rich chat application built with React Native and Firebase, designed specifically for college students to communicate and share resources efficiently.
+
+[✨ Features](#features) • [🚀 Installation](#installation) • [📱 Screenshots](#screenshots) • [🛠️ Tech Stack](#technical-stack)
+
+---
+
+</div>
+
+## ✨ Features
+
+### 🗄️ Cloud Storage Integration
+
+- 📤 Seamless file sharing through Firebase Cloud Storage
+- 💾 Direct file uploads similar to Google Drive functionality
+- 📁 Support for multiple file types (documents, images, videos)
+- 🔒 Secure file storage and retrieval
+
+### 💬 Chat Features
+
+- ⚡ Real-time messaging using Firebase Realtime Database
+- 👥 Individual and group chat capabilities
+- ✓✓ Message status indicators (sent, delivered, read)
+- 📦 Archived chats section
+- ⭐ Starred messages for quick access
+- 🖼️ Media gallery for shared photos and videos
+- 👀 File preview functionality
+
+### 🔐 Authentication & Security
+
+- 🔑 Secure user authentication via Firebase Auth
+- 🔄 Password recovery functionality
+- 👤 User profile management
+- 🔒 End-to-end encryption for messages
+
+### ⚙️ Profile & Settings
+
+- 🎨 Customizable user profiles
+- 📸 Profile picture upload
+- 🔔 Notification preferences
+- 🌓 App appearance settings
+- 😊 Sticker and GIF support
+
+## 📱 Screenshots
+
+<div align="center">
+<table>
+  <tr>
+    <td><strong>Login Screen</strong></td>
+    <td><strong>Chat List</strong></td>
+    <td><strong>Chat Room</strong></td>
+  </tr>
+  <tr>
+    <td><em>Coming soon</em></td>
+    <td><em>Coming soon</em></td>
+    <td><em>Coming soon</em></td>
+  </tr>
+</table>
+</div>
+
+## 🎥 Demo
+
+▶️ [Watch Demo Video](https://youtube.com) (Coming soon)
+
+## 🛠️ Technical Stack
+
+<table>
+  <tr>
+    <td><strong>🎨 Frontend</strong></td>
+    <td>
+      <a href="https://reactnative.dev/">
+        <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native"/>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>⚙️ Backend</strong></td>
+    <td>
+      <a href="https://firebase.google.com/">
+        <img src="https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white" alt="Firebase"/>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>🔧 Development</strong></td>
+    <td>
+      <a href="https://www.typescriptlang.org/">
+        <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+      </a>
+    </td>
+  </tr>
+</table>
+
+### 📚 Key Libraries
+
+- 🔐 Firebase Authentication
+- 🗄️ Firebase Cloud Storage
+- 📦 Firestore Database
+- ⚡ Cloud Functions
+- 🎨 React Native Vector Icons
+- 📱 React Native Gesture Handler
+- 🧭 React Navigation Stack
+- 📸 React Native Image Picker
 
 # Getting Started
-
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
-
-## Step 1: Start the Metro Server
 
 First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
 
@@ -18,35 +126,83 @@ npm start
 yarn start
 ```
 
-## Step 2: Start your Application
+## Prerequisites
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+- Node.js (LTS version)
+- Java Development Kit (JDK) 17 (required)
+- Android Studio & Android SDK
+- iOS development tools (for Mac users)
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/PREMRAJESH/RTCA.git
+```
+
+2. Install dependencies:
+
+```bash
+cd CollegeChatApp
+npm install
+```
+
+3. Start Metro bundler:
+
+```bash
+npm start
+```
+
+4. Run the application:
 
 ### For Android
 
 ```bash
-# using npm
 npm run android
-
-# OR using Yarn
-yarn android
 ```
 
 ### For iOS
 
 ```bash
-# using npm
+cd ios
+pod install
+cd ..
 npm run ios
-
-# OR using Yarn
-yarn ios
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+## Project Structure
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+```
+CollegeChatApp/
+├── screens/
+│   ├── auth/           # Authentication screens
+│   ├── chat/           # Chat-related screens
+│   ├── profile/        # User profile screens
+│   └── settings/       # App settings screens
+├── contexts/           # React Context providers
+├── config/            # Configuration files
+├── types/             # TypeScript type definitions
+└── assets/            # Images and other static assets
+```
 
-## Step 3: Modifying your App
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Firebase team for the excellent backend services
+- React Native community for the comprehensive component libraries
+- All contributors who have helped shape this project
 
 Now that you have successfully run the app, let's modify it.
 

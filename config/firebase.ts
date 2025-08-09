@@ -1,4 +1,4 @@
-import firebase from '@react-native-firebase/app';
+import {initializeApp, getApps, getApp} from '@react-native-firebase/app';
 import auth from '@react-native-firebase/auth';
 import firestore from '@react-native-firebase/firestore';
 import storage from '@react-native-firebase/storage';
@@ -14,10 +14,13 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-if (!firebase.apps.length) {
-  firebase.initializeApp(firebaseConfig);
+let app;
+if (getApps().length === 0) {
+  app = initializeApp(firebaseConfig);
+} else {
+  app = getApp();
 }
 
-export {firebase, auth, firestore, storage};
+export {app, auth, firestore, storage};
 
-export default firebase;
+export default app;
