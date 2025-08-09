@@ -2,15 +2,23 @@ import {initializeApp, getApps, getApp} from '@react-native-firebase/app';
 import auth from '@react-native-firebase/auth';
 import firestore from '@react-native-firebase/firestore';
 import storage from '@react-native-firebase/storage';
+import {
+  FIREBASE_API_KEY,
+  FIREBASE_AUTH_DOMAIN,
+  FIREBASE_PROJECT_ID,
+  FIREBASE_STORAGE_BUCKET,
+  FIREBASE_MESSAGING_SENDER_ID,
+  FIREBASE_APP_ID,
+} from '@env';
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyAwdHMG3j_WLLRAGjHfB7PhqQ1JDW-MWsI',
-  authDomain: 'rtca-prototype.firebaseapp.com',
-  projectId: 'rtca-prototype',
-  storageBucket: 'rtca-prototype.firebasestorage.app',
-  messagingSenderId: '520112168330',
-  appId: '1:520112168330:android:632188427db438267abc73',
+  apiKey: FIREBASE_API_KEY,
+  authDomain: FIREBASE_AUTH_DOMAIN,
+  projectId: FIREBASE_PROJECT_ID,
+  storageBucket: FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: FIREBASE_MESSAGING_SENDER_ID,
+  appId: FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
